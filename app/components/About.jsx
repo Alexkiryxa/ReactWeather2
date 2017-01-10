@@ -8,6 +8,11 @@ let React = require('react');
 //     }
 // });
 
-let About = (props) => <div><h3>About</h3><p>Welcome to about page</p></div>;
+let About = (props) => (
+    <div>
+        <h1 className="text-center">About</h1>
+        <p>Welcome to about page</p>
+    </div>
+);
 
 module.exports = About;
