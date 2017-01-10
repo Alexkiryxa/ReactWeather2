@@ -6,6 +6,14 @@ let Weather = require('Weather');
 let About = require('About');
 let Examples = require('Examples');
 
+// Load foundation
+/*
+    css! using css loader
+    in webpack.config script! is a script loader
+*/
+require('style!css!foundation-sites/dist/css/foundation.min.css');
+$(document).foundation();
+
 ReactDOM.render(
     <Router history={hashHistory}>
         <Route path="/" component={Main}>
